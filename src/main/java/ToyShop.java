@@ -27,7 +27,7 @@ public class ToyShop {
     }
 
     private static void getToy(List<Toy> toys) {
-        try (FileWriter writer = new FileWriter("result.txt")) {
+        try (FileWriter writer = new FileWriter("src/main/java/result.txt")) {
             for (Toy toy : toys) {
                 writer.write("ID: " + toy.getId() + ", Название: " + toy.getName() + ", Частота: " + toy.getFrequency() + "%\n");
             }
